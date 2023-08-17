@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.gotopbtn{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background:#00a3a8;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 50%;
+}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+header{
+    position: sticky;
+    z-index: 2;
+    top: -10px;
+   /* padding: 24px; */
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+ul{
+    list-style-type: none;
+}
+ul > li > a{
+    text-decoration: none;
+
+}
+.main.flex{
+    background-color:#f3f3f3;
+    height: 50px;
+    align-items: center;
+   
+}
+li > a{
+    color: #212529;
+}
+.second.list{
+    width: 30%;
+   
+}
+.child.list_1{
+    width: 100%;
+}
+.child.list_2{
+    width: 30%;
+}
+.right{
+    justify-content: space-around;
+}
+.sub{
+    justify-content: space-evenly;
+    width: 100%;
+}
+.sub > li > a:hover{
+    color: #00a3a8;
+}
+.flex{
+    display: flex;
+
+}
+.child_child > a > i{
+    padding-right: 4px;
+}
+.main{
+    justify-content: space-around;
+}
+.icon{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.icon > li > a > i{
+    display: block;
+    padding:8px;
+
+}
+.icon > li > a > i:hover {
+    width: 100%;
+    color:white;
+    background-color: #00769c;
+}
+.search,.child.list_1{
+    display: flex;
+    align-items: center;
+}
+.search > a{
+    padding-left: 10px;
+}
+.boat{
+    float: left;
+   font-size: 70px;
+   margin-right: 10px;
+}
+.HOSPITAL{
+    align-items: center;
+   
+   
+}
+.slogan > h2{
+    color: #006f98;
+}
+.navi{
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 15px;
+    background: white;
+}
+div > h4{
+   color: #747373;
+   font-size: small;
+}
+#nav{
+ width: 100%;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+}
+.subnav{
+    display: none;
+    min-width: 15%;
+    transition-duration: 0.3s;
+}
+.subnav > li > a{
+    display: block;
+    padding: 10px;
+}
+.subnav > li > a:hover{
+    color: #00769c;
+    text-decoration: underline;
+}
+.pos > a{
+    line-height: 41.6px;
+    display: block;
+    padding: 0 10px;
+}
+.pos{
+    display: block;
+}
+.pos:hover > a{
+    background-color:#00769c;
+    color: white;
+}
+.pos:hover .subnav{
+    display: block;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* Từ phần này đổ xuống là của naviga*/
+.naviga{
+    justify-content: flex-start;
+
+}
+.naviga > li{
+    margin-left: 10px;
+}
+.nav_child{
+   margin: 0 10%;
+}
+.main_thumb{
+    padding: 15px 0;
+    background: #f3f3f3;
+}
+/* Phần này của Background CHuyên khoa */
+.backGround_chuyenkhoa > .bgCK > img{
+    width: 100%;
+}
+.slot_Chuyenkhoa > h1{
+    color:#1691E2;
+    text-align: center;
+    font-size: 24px;
+}
+.slot_Chuyenkhoa {
+    padding:15px 0;
+    
+}
+/*Từ phần này là của các item chuyên khoa */
+.main_item{
+    padding:0 10%;
+}
+.items{
+    background-color: #F0F2F1;;
+}
+.item{
+    
+   
+    justify-content: space-evenly;
+}
+.item > div{
+    width: 25%;
+    margin: 0 10px;
+    background: #fff!important;;
+    padding: 15px;
+    text-align: center;
+    margin-top: 5%;
+        
+    border-radius: 15px;
+}
+.items > div.main_item:last-child > div.item > div{
+    margin-bottom: 5%;
+}
+.item > div > a > div{
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    padding: 15px;
+    border-radius: 50%;
+    border: 5px solid #1692E3;
+    overflow: hidden; 
+    margin: 0 auto;
+}
+
+.item > div > a > div > img{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}.item > div > a > h2{
+    color: black;
+    font-size: 15px;
+    
+}
+.item > div > a{
+    text-decoration: none;
+
+}
+/* Nút thứ tự trang  */
+.button{
+    justify-content: center;
+    margin:15px;
+}
+.button > .main_button {
+    padding: 15px;
+    border-radius: 10px;
+   margin-left: 10px;
+    border:1px solid #00769c;
+}
+.button > .main_button > a{
+    text-decoration: none;
+}
+/* Từ phần này đổ xuống là của footer */
+.foot_root{
+    width: 100%;
+    margin: 0 auto;
+}
+.foot_root > div:last-child > i{
+    display: block;
+    text-transform:capitalize;
+    text-align: center;
+}
+.contact_foot{
+    justify-content: space-evenly;
+}
+.contact_foot > div:nth-child(2) > ul > li{
+    padding: 5px;
+}
+.contact_foot > div:first-child > h2{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+footer{
+    background:#00769c;
+    padding-top: 10px;
+    color: white;
+}
+.information > ul > li > a{
+    color: white;
+}

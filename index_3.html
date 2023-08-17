@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OPEN HOSPITAL</title> <meta name="description" content="Bệnh viện Mở (Open Hospital) là địa chỉ thăm khám, điều trị và chăm sóc sức khỏe với đội ngũ chuyên gia, bác sĩ hàng đầu. Vì sức khỏe cộng đồng luôn đồng lòng cùng bạn.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="benh vien mo, website mo, Benh Vien Mo, Open Hospital, kham benh, chua benh, dieu tri, cham soc suc khoe"/>
+    <meta http-equiv="REFRESH" content="1800"/>
+    <link rel="stylesheet" href="css/style_3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="images/z4587933816085_4b980c0a518d6eee505c63c10b1305b2.jpg" rel="shortcut icon"/>
+</head>
+<body onload="init()">
+    <header class="sticky">
+        
+        <div class="loader"></div>
+        <div id="contact">
+            <ul class="main flex">
+               
+                    <div>
+                        <h2 id="clock">Thứ 0, 00:00:00</h2>
+                    </div>
+                   
+                <li><a href="#"><i class="fa-solid fa-earth-americas" style="color: #52607a;"></i> Tiếng Việt<i class="fa-solid fa-angle-down"></i></a></li>
+
+     
+                <li class="second list">
+                      <ul class="right flex">
+                        <li class="child list_1">
+                            <ul class="sub flex">
+                                <li class="child_child"><a href="#"><i class="fa-solid fa-stethoscope"></i>Tìm bác sĩ</a></li>
+                                <li class="child_child"><a href="register.html"><i class="fa-solid fa-calendar-days"></i>Đặt lịch hẹn</a></li>
+                            </ul>
+                        </li>
+                        <li class="child list_2">
+                            <ul class="sub flex icon">
+                                <li><a href="#"><i class="fa-regular fa-comment"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-phone-flip"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class="search">
+                           <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                      </ul>    
+                </li>
+            </ul>
+        </div>
+        <div class="nav sticky">
+            <ul class="flex navi">
+                <li class="flex HOSPITAL">
+                    <div class="boat">
+                        <a href="#"><i class="fa-regular fa-hospital"></i></a>
+                    </div>
+                    <div class="slogan">
+                        <h2>OPEN HOSPITAL</h2>
+                        <h4>INTERNATIONAL</h4>
+                    </div>
+                    
+                </li>
+                <div class="flex menu right">
+                    <ul class="flex second" >
+                        <li class="pos"><a href="#">Chuyên khoa</a>
+                            <ul class="subnav">
+                                <li><a href="#">Khoa da liễu</a></li>
+                                <li><a href="#">Khoa mắt</a></li>
+                                <li><a href="#">Khoa chỉnh hình</a></li>
+                                <li><a href="#">Khoa tim mạch</a></li>
+                                <li><a href="chuyenkhoa.html">Xem thêm</a>
+                                </li>
+                            </ul></li>
+
+                        <li class="pos"><a href="#">Trung tâm & Dịch vụ</a>
+                            <ul class="subnav">
+                                <li><a href="#">Xe cứu thương</a></li>
+                                <li><a href="#">Dịch vụ vận chuyển y tế</a></li>
+                                <li><a href="#">Dịch vụ phục hồi chức năng</a></li>
+                                <li><a href="#">Khám sức khỏe tổng quát</a></li>
+                                <li><a href="#">Phòng xét nghiệm</a></li>
+                            </ul>
+                        </li>
+                        <li class="pos"><a href="#">Health Plus</a>
+                            <ul class="subnav">
+                                <li><a href="#">Các chủ đề từ A-Z</a></li>
+                                <li><a href="infor_hos.html">Giới thiệu về Health Plus</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="pos"><a href="#">Công tác xã hội</a>
+                            <ul class="subnav">
+                                <li><a href="#">Trái tim đến trái tim</a></li>
+                                <li><a href="#">Hiến máu nhân đạo</a></li>
+                                <li><a href="#">Trao mái tóc, gửi yêu thương</a></li>
+                                <li><a href="#">Bữa cơm nhân ái</a></li>
+                                <li><a href="#">Khác</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+               
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        <a id="gotopbtn" href=""><i class="fa-solid fa-up-long"></i></a>
+        <section>
+        <div id="picture">
+                <div class="pic-wrap">
+            
+                <img id="hos-pic" src="images/banner/slide002.jpg" rel="1" alt="">
+                 
+       
+                </div>
+                <!-- Button next prev -->
+                <div class="buttons">
+                    <button id="prev_list" onclick=""><</button>
+                    <button id="next_list" >></button>
+                </div>
+            </div>
+               <div class="flex info">
+                    <div class="flex child">
+                       <img src="images/iconn-01-min.png" alt="">
+                        <div class="child">
+                            <div class="num" data-val="10">00</div>
+                            <span class="year">Năm</span>
+                            <div>Hình thành & Phát triển</div>
+                        </div>  
+                    </div>
+                    <div class="flex child">
+                        <img src="images/iconn-02-min.png" alt="">
+                        <div class="child">
+                            <div class="num" data-val="97"></div>
+                            <div>Giáo sư, bác sĩ hàng đầu</div>
+                        </div>
+                    </div>
+                    <div class="flex child">
+                        <img src="images/iconn-03-min.png" alt="">
+                        <div class="child">
+                            <div class="num" data-val="3">00 </div>
+                            <span>.000.204</span>
+                            <div>Bệnh nhân đến khám & điều trị</div>
+                        </div>
+                    </div>
+                    <div class="flex child">
+                        <img src="images/iconn-04-min.png" alt="">
+                        <div class="child">
+                            <div class="num" data-val="100">00</div>
+                            <span class="percent">%</span>
+                            <div>Khách hàng hài lòng</div>
+                        </div>
+                    </div>
+               </div>  
+            
+
+                        
+                    
+            
+            
+            <div class="main_content">
+                <div class="welcome">
+                    <div class="title">
+                        <h1>CHÀO MỪNG BẠN ĐẾN VỚI OPEN HOSPITAL</h1>
+    
+                    </div>
+                    <div class="main-item flex">
+                        <div class="border_around flex  ">
+                            <div class="item">
+                                <div class="pict"><img src="images/iconn-01-min.png" alt=""></div>
+                                <div class="text_hos"><h2>BÁC SĨ KINH NGHIỆM</h2>  </div>
+                                <div class="para"><p>Đội ngũ bác sĩ là các chuyên gia nhãn khoa với nền tảng chuyên môn vững chắc, giàu kinh nghiệm và y đức.
+                                </p></div>
+                            </div>
+                           <div class="item">
+                                <div class="pict"><img src="images/iconn-01-min.png" alt=""></div>
+                                <div class="text_hos"> <h2>BÁC SĨ KINH NGHIỆM</h2> </div>
+                                <div class="para"><p>Hệ thống trang thiết bị y tế hiện đại bấc nhất được nhập khẩu từ các nước Anh, Mỹ, Đức
+                                </p></div>
+                            </div>
+                                <div class="item">
+                                    <div class="pict"><img src="images/iconn-01-min.png" alt=""></div>
+                                    <div class="text_hos"> <h2>BÁC SĨ KINH NGHIỆM</h2> </div>
+                                    <div class="para"><p>Chi phí khám và điều trị, phẫu thuật minh bạch, rõ ràng cùng nhiều ưu đãi hỗ trợ hấp dẫn.
+                                        
+                                    </p></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="pict"><img src="images/iconn-01-min.png" alt=""></div>
+                                        <div class="text_hos"> <h2>BÁC SĨ KINH NGHIỆM</h2> </div>
+                                        <div class="para"><p>10 bệnh viện phủ sóng từ Bắc vào Nam, thuận tiện người dân trên khắp cả nước.
+                                            
+                                        </p></div>
+                                        </div>
+                                        
+                            
+                        </div>
+                    
+                </div>
+            </div>
+                 <div class="about content flex">
+              <div>
+                 <h1>OPEN HOSPITAL</h1>
+                 <p>Nằm giữa trung tâm Thành Phố Hồ Chí Minh, Open Hospital chính thức đi vào hoạt động từ tháng 11/2010. Sau hơn 1 thập kỷ hình thành và phát triển, Bệnh viện được đánh giá là một trong những địa chỉ khám, chữa bệnh uy tín, có chất lượng dịch vụ cao.</p>
+                 <p>Mỗi ngày Bệnh viện tiếp nhận hàng trăm lượt bệnh nhân trên cả nước đến thăm khám và điều trị. 100% khách hàng đều tin tưởng và hài lòng.</p>
+                 <div class="button">XEM THÊM</div>
+              </div>
+              <div class="content flex right">
+                 <div>
+                    <h2>HỆ THỐNG CƠ SỞ VẬT CHẤT HIỆN ĐẠI</h2>
+                    <img src="images/3800997-03-min.png" a  lt="">
+                 </div>
+                 <div>
+                    <img src="images/3800997-04-min.png" alt="">
+                    <h2>TRANG THIẾT BỊ TỐI TÂN HÀNG ĐẦU</h2>
+                 </div>
+              </div>
+            </div>  
+            <!-- Phần này là của Slider Show -->
+            <div class="wrapper">
+                <div class="elementor-row">
+                    <div class="element-wrap">
+                        <div class="title-main">
+                            <h1>Dịch vụ nổi bật</h1>
+    
+                        </div>
+                        
+                        <div id="formwriper">
+                            <div class="wriper container"">
+                                <div class="wriper-item">
+                                    <div class="icon_hos">
+                                       <img src="images/chucnang/bone-02.png" alt="">
+                                    </div>
+                                    <div class="chucnang">
+                                        <h3>Xương khớp</h3>
+                                    </div>
+                                </div>
+                                <div class="wriper-item">
+                                    <div class="icon_hos">
+                                       <img src="images/chucnang/bone-03.png" alt="">
+                                    </div>
+                                    <div class="chucnang">
+                                        <h3>Sản & Nhi - Hỗ trợ sinh sản</h3>
+                                    </div>
+                                </div>
+                                <div class="wriper-item">
+                                    <div class="icon_hos">
+                                       <img src="images/chucnang/bone-05.png" alt="">
+                                    </div>
+                                    <div class="chucnang">
+                                        <h3>Chấn thương cột sống</h3>
+                                    </div>
+                                </div>
+                                <div class="wriper-item">
+                                    <div class="icon_hos">
+                                       <img src="images/chucnang/bone-06.png" alt="">
+                                    </div>
+                                    <div class="chucnang">
+                                        <h3>Tim mạch</h3>
+                                    </div>
+                                </div>
+                                <div class="wriper-item">
+                                    <div class="icon_hos">
+                                       <img src="images/chucnang/bone-07.png" alt="">
+                                    </div>
+                                    <div class="chucnang">
+                                        <h3>Hệ tiêu hóa</h3>
+                                    </div>
+                                </div>
+                                <div class="wriper-item">
+                                    <div class="icon_hos">
+                                       <img src="images/chucnang/bone-08 (1).png" alt="">
+                                    </div>
+                                    <div class="chucnang">
+                                        <h3>Thần kinh</h3>
+                                    </div>
+                                </div>
+                                <div class="wriper-item">
+                                    <div class="icon_hos">
+                                       <img src="images/chucnang/bone-09.png" alt="">
+                                    </div>
+                                    <div class="chucnang">
+                                        <h3>Nội tiết</h3>
+                                    </div>
+                                </div>
+                                <div class="wriper-item">
+                                    <div class="icon_hos">
+                                       <img src="images/chucnang/bone-10.png" alt="">
+                                    </div>
+                                    <div class="chucnang">
+                                        <h3>Tiết niệu, nam học</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="direction">
+                    <button id="prev"> < </button>
+                    <button id="next"> > </button>
+                </div>
+            </div>
+            
+            </div>
+            <!-- Đây là phần của thông tin và book lịch -->
+            <div class="elementor element">
+                <div class="elementor-main container">
+                    <div class="element-row">
+                        <div class="elements-item">
+                            <div class="elements-item-column">
+                                <div class="title-item"><h1>
+                                  Tư vấn khám chữa bệnh, chuẩn xác và hiệu quả
+                                </h1></div>
+                            <div class="para-item"><p>
+                                Đội ngũ y bác sĩ đầu ngành và giàu kinh nghiệm mang đến cho bạn những lời khuyên chuẩn xác và phù hợp nhất với tình trạng mỗi cá nhân
+                            </p></div>
+                            
+                            </div>
+                            <div class="elements-item-book">
+                                <a href="#"> <div class="button-book">ĐẶT HẸN NGAY</div></a>
+                                <a href="#"> <div class="button-takecare">NHẬN TƯ VẤN</div></a>
+                            </div>
+                        </div>
+                        <div class="elements-item">
+                            <img src="images/chucnang/15z.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Đây là phần của arcticle -->
+            <div class="article">
+                <div class="title"><h1>HỆ THỐNG KĨ THUẬT OPEN HOSPITAL</h1></div>
+                <div class="plus">
+                    
+                </div>
+                <div class="para">
+                    <p>Nhằm thúc đẩy tính cạnh tranh trong các dịch vụ, hỗ trợ mang đến dịch vụ y tế tốt nhất, OPEN HOSPITAL liên tục đầu tư trang thiết bị, mạnh dạn ứng dụng hàng loạt kỹ thuật y học hiện đại. Như một cú hích trong hành trình phát triển, Bệnh viện phát triển “Hệ thống các Trung tâm Kỹ thuật cao” với tổ hợp nhiều trung tâm chuyên sâu.</p>
+                </div>
+                <div class="flex ITEM">
+                  <div class="father_shadow" style="position: relative;">
+                    <div>
+                    <img  src="images/p-01-min.png" alt="">
+                </div>
+                    <div style=" color: black;background-color: white;position: absolute;bottom: 0;width: 100%;">
+                        <a href="#">Chẩn đoán, can thiệp</a>
+                    </div>
+                  </div>
+                  <div class="father_shadow" style="position: relative;">
+                    <div>
+                    <img  src="images/p-01-min.png" alt="">
+                </div>
+                    <div style=" color: black;background-color: white;position: absolute;bottom: 0;width: 100%;">
+                        <a href="#">Chuẩn đoán, can thiệp</a>
+                    </div>
+                  </div>
+                  <div class="father_shadow" style="position: relative;">
+                    <div>
+                    <img  src="images/p-01-min.png" alt="">
+                </div>
+                    <div style=" color: black;background-color: white;position: absolute;bottom: 0;width: 100%;">
+                        <a href="#">Chuẩn đoán, can thiệp</a>
+                    </div>
+                  </div>
+                  
+            </div>
+            <div class="flex ITEM2">
+                <div class="father_shadow" style="position: relative;">
+                    <img  src="images/p-01-min.png" alt="">
+                    <div style=" color: black;background-color: white;position: absolute;bottom: 0;width: 100%;">
+                        <a href="#">Chuẩn đoán, can thiệp</a>
+                    </div>
+                  </div>
+                  <div class="father_shadow" style="position: relative;">
+                    <img  src="images/p-01-min.png" alt="">
+                    <div style=" color: black;background-color: white;position: absolute;bottom: 0;width: 100%;">
+                        <a href="#">Chuẩn đoán, can thiệp</a>
+                    </div>
+                  </div>
+                  <div class="father_shadow" style="position: relative;">
+                    <img  src="images/p-01-min.png" alt="">
+                    <div style=" color: black;background-color: white;position: absolute;bottom: 0;width: 100%;">
+                        <a href="#">Chuẩn đoán, can thiệp</a>
+                    </div>
+                  </div>
+            </div>
+            </div>
+            
+
+        </section>
+    </main>
+    <footer>
+        <div class="foot_root">
+            <div class="flex contact_foot">
+                <div>
+                    <h2>OPEN HOSPITAL</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9251197678745!2d106.67453267490845!3d10.817042389334253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e1f241211f%3A0xc9ef195798144b1f!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLkhDTSAtIEPGoSBz4bufIDM!5e0!3m2!1svi!2s!4v1691583202222!5m2!1svi!2s" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+                <div>
+                  <div><h3>LIÊN HỆ</h3></div>
+                  <ul>
+                    <li><i class="fa-solid fa-house-chimney"></i> Công ty cổ phần Y khoa TPHCM</li>
+                    <li><i class="fa-solid fa-location-dot"></i> 371 Nguyễn Kiệm-Gò Vấp-TPHCM</li>
+                    <li><i class="fa-solid fa-phone"></i> 1900 2345 29</li>
+                    <li><i class="fa-solid fa-envelope"></i> CSKH@benhvienHoChiMinh.vn</li>
+                  </ul>
+                </div>
+                <div>
+                    <div class="information">
+                        <ul>
+                            <li><a href="#">GIỚI THIỆU</a></li>
+                            <li><a href="#">CHUYÊN KHOA</a></li>
+                            <li><a href="#">ĐỘI NGŨ CHUYÊN MÔN</a></li>
+                            <li><a href="#">DỊCH VỤ</a></li>
+                            <li><a href="#">KHÁCH HÀNG CẦN BIẾT</a></li>
+                            <li><a href="#">TIN TỨC</a></li>
+                            <li><a href="#">CHÍNH SÁCH BẢO MẬT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <i>Copyright © 2020, bản quyền thuộc về BỆNH VIỆN MỞ.</i>
+                <i>Phát triển bởi DoanhvaDan.vn</i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index_3.js">
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,651 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Asap Condensed', sans-serif; 
+}
+body{
+    font-family: 'Asap Condensed', sans-serif; 'Asap Condensed', sans-serif; 
+}
+#gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background:#00a3a8;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s , box-shadow 0.3s;
+
+}
+#gotopbtn:active{
+    transform: translateY(10px);
+}
+
+#clock{
+    font-size: 15px;
+}
+/* Hiệu ứng loading khi vào trang */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  /* Phần này đổ xuống là từ của header*/
+header{
+   position: sticky;
+    width: 100%;
+    z-index: 10000;
+    transition: 0.6s ;
+    top: -10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.16);
+   
+}
+.nav{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+body{
+    font-family: 'Asap Condensed', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+ul > li > a{
+    text-decoration: none;
+
+}
+.main.flex{
+    background-color:#f3f3f3;
+    height: 50px;
+    align-items: center;
+   
+}
+
+li > a{
+    color: #212529;
+}
+.second.list{
+    width: 30%;
+   
+}
+.child.list_1{
+    width: 100%;
+}
+.child.list_2{
+    width: 30%;
+}
+.right{
+    justify-content: space-around;
+}
+.sub{
+    justify-content: space-evenly;
+    width: 100%;
+}
+.sub > li > a:hover{
+    color: #00a3a8;
+}
+.flex{
+    display: flex;
+
+}
+.child_child > a > i{
+    padding-right: 4px;
+}
+.main{
+    justify-content: space-around;
+}
+.icon{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.icon > li > a > i{
+    display: block;
+    padding:8px;
+
+}
+.icon > li > a > i:hover {
+    width: 100%;
+    color:white;
+    background-color: #00769c;
+}
+.search,.child.list_1{
+    display: flex;
+    align-items: center;
+}
+.search > a{
+    padding-left: 10px;
+}
+.boat{
+    float: left;
+   font-size: 70px;
+   margin-right: 10px;
+}
+.HOSPITAL{
+    align-items: center;
+   
+   
+}
+.slogan > h2{
+    color: #006f98;
+}
+.navi{
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 15px;
+    background: white;
+}
+div > h4{
+   color: #747373;
+   font-size: small;
+}
+#nav{
+ width: 100%;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+}
+.subnav{
+    display: none;
+    min-width: 15%;
+    transition-duration: 0.3s;
+}
+.subnav > li > a{
+    display: block;
+    padding: 10px;
+    text-transform:uppercase;
+}
+.subnav > li > a:hover{
+    color: #00769c;
+    text-decoration: underline;
+}
+.pos > a{
+    line-height: 41.6px;
+    display: block;
+    padding: 0 10px;
+}
+.pos{
+    display: block;
+}
+.pos:hover > a{
+    background-color:#00769c;
+    color: white;
+}
+.pos:hover .subnav{
+    display: block;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* Từ chỗ này xuống là của main */
+#picture > .pic-wrap > img{
+   width:100%;
+   max-width: 100vw;
+   height: auto;
+   
+}   
+#picture{
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+}
+
+
+
+
+#picture > .pic-wrap{
+   display: flex;
+    width: 100%;
+    
+}
+
+/* Button slider */
+.buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #79a5ec;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+/*  */
+
+ul.flex.para{
+   width: 70%;
+}
+.flex.info{
+    justify-content: center;
+}
+.flex.child > img{
+    width: 30%;
+}
+.child{
+    align-items: center;
+    
+}
+.child > div:first-child, span{
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 30px;
+    color: #4054b2;
+    font-weight: 600;
+
+}
+.child > div:last-child{
+    color: #4054b2;
+    font-size: 15px;
+  
+    
+    font-family: 'Asap Condensed', sans-serif;
+}
+.num{
+    display: inline-block;
+}
+
+.info{
+    margin: 0 auto;
+}
+/* Từ phần này là của welcome */
+.title{
+    position: relative;
+    
+}
+.title > h1{
+    text-align: center;
+    color: #1692E3;
+}
+.welcome{
+    padding:5% 0;
+    width: 100%;
+    background:#1692e336;
+}
+.welcome > .title::after{
+    width: 100%;
+  
+   position: absolute;
+    content: "";
+    width: 45px;
+    height: 5px;
+    background:#1692E3;
+    margin: 20px auto;
+    right: 0;
+    left: 0;
+    
+}
+.item{
+    width: 20%;
+    text-align: center;
+}
+.item:hover > .pict{
+    
+    scale: 1.1;
+    transition-duration: 0.7s;
+}
+.main-item{
+    margin:5% 10px;
+    justify-content: center;
+}
+.pict > img{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.pict{
+
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    padding: 15px;
+    border-radius: 50%;
+    border: 5px solid #1692E3;
+    overflow: hidden; 
+    margin: 0 auto;
+}
+.item > .text_hos > h2{
+    color: #1692E3;
+}
+.item > .para > p{
+    text-align: justify;
+    font-family: 'Asap Condensed', sans-serif;
+}
+.border_around{
+    width: 80%;
+    justify-content: space-evenly;
+}
+/* Từ phần này là của about */
+.about.content{
+   padding: 10% 0;
+    background-color: #dcebf8;
+    margin: 0 auto;
+    
+    justify-content: space-around;
+}
+.about.content > div > h1{
+    color: #4054b2;
+    font-size: 33px;
+    font-family: 'Asap Condensed', sans-serif;
+    margin-bottom: 30px;
+}
+.about.content > div > p{
+    
+    margin: 5px 0;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Asap Condensed', sans-serif;
+}
+.right.flex.content > div > h2{
+    color: #4054b2;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.right.flex.content > div:last-child > h2{
+    margin-top: 30px;
+}
+.about.content > div:first-child > .button{
+    display: inline-block;
+    margin-top: 10px;
+    color:#dcebf8;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: red;
+}
+.about.content > div:first-child{
+    width: 30%;
+    margin-left: 10%;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.about.content > div:last-child{
+    padding-top: 50px;
+}
+/* Phần này là của icon */
+.title-main > h1{
+    text-align: center;
+    font-weight: bold;
+    font-size:30px;
+    
+}
+.title-main::after{
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 5px;
+    background:#1692E3;
+    margin: 20px auto;
+    right: 0;
+    left: 0;
+}
+.title-main{
+    padding-bottom: 50px;
+}
+.wrapper{
+    background-color: #1692e336;
+   text-transform: uppercase;
+   color: #1692E3;
+    padding-top: 10px;
+    box-shadow:  0 0 10px 0 rgba(0,0,0,.16);;
+    
+}
+#formwriper{
+    max-width: 100%;
+    overflow: auto;
+    width: 1280px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+
+}
+#formwriper::-webkit-scrollbar{
+    display: none;
+}
+.wriper{
+    display: flex;
+    width: max-content;
+
+}
+
+.wriper-item{
+    border: burlywood solid;
+    border-radius: 20px;
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+   background-color: #dcebf8;
+   margin-left: 10px;
+   box-shadow: 0 0 10px 0 rgba(0,0,0,.16);
+}
+.icon_hos{
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    padding: 15px;
+    border-radius: 50%;
+    border: 5px solid #1692E3;
+    overflow: hidden; 
+    margin: 0 auto;
+}
+.icon_hos > img{
+    width: 100%;
+}
+.direction{
+    text-align: center;
+    margin: 5% 0;
+}
+.direction button{
+    font-family: 'Asap Condensed', sans-serif; 
+    font-weight: bold;
+    background-color: cadetblue;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin:0 10px;
+}
+.direction > button:hover{
+    background-color: azure;
+}
+
+/* Phần này là của thông tin và book lịch */
+.elementor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(45deg,rgb(53, 149, 162),hwb(217 27% 20%),hsl(215, 71%, 39%));
+   
+}
+.element-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.element-row > div:first-child{
+    
+}
+.element-row > .elements-item{
+    width: 30%;
+}
+.element-row > .elements-item > .elements-item-book, .elements-item-column{
+    margin: 10% 0;
+}
+
+.elements-item-book{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+} 
+.elements-item-book > a > div{
+        text-transform: uppercase;
+        color: white;
+        background-color: cornflowerblue;
+        width: auto;
+        padding: 15px;
+        text-align: center;
+        border-radius: 25px;
+        border: blue solid;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.16);
+}
+.elements-item-book > a {
+    text-decoration: none;
+}
+.title-item{
+    text-transform: uppercase;
+    color: aquamarine;
+    margin: 5% 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.para-item{
+    text-align: justify;
+    font-size: 20px;
+}
+/* Từ phần này đổ xuống là của  */
+.article{
+    padding: 10% 10%;
+}
+.article > .title > h1{
+    color: #3060ad;
+    font-size: 33px;
+ 
+    font-family: 'Asap Condensed', sans-serif; 
+}
+.article > .plus{
+    color: #3060ad;
+}
+.title{
+    text-align: center;
+    
+}
+.plus{
+    display: block;
+    text-align: center;
+}
+.ITEM, .ITEM2{
+    justify-content: space-evenly;
+ 
+
+}
+.ITEM, .para, .title{
+    margin-top: 3%;
+}
+.ITEM2{
+    margin-top: 7%;
+}
+.para > p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Asap Condensed', sans-serif;
+}
+.father_shadow{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+.father_shadow > div > a{
+    text-decoration: none;
+    display: block;
+   padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color:#2c57ab;
+    
+}
+.father_shadow:hover > div > a{
+    background-color: #2c57ab;
+    color: white;
+    transition-duration: 0.3s;
+}
+.father_shadow > div:first-child{
+    overflow: hidden;
+}
+.father_shadow > div:first-child:hover img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.25);
+    transition: all 0.3s ease-in-out;
+}
+/*  Từ phần này là của footer*/
+.foot_root{
+    width: 100%;
+    margin: 0 auto;
+}
+.foot_root > div:last-child > i{
+    display: block;
+    text-transform:capitalize;
+    text-align: center;
+}
+.contact_foot{
+    justify-content: space-evenly;
+}
+.contact_foot > div:nth-child(2) > ul > li{
+    padding: 5px;
+}
+.contact_foot > div:first-child > h2{
+    text-align: center;
+    font-family: 'Asap Condensed', sans-serif;
+}
+footer{
+    background:#00769c;
+    padding-top: 10px;
+    color: white;
+}
+.information > ul > li > a{
+    color: white;
+}
+
+

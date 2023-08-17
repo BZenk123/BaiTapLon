@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="index_3.js"></script>
+</head>
+<body>
+    <div class="loader"></div>
+    <main>
+        <a class="backbutton" href="index_3.html" ><i class="fa-solid fa-left-long"></i></a>
+        <div class="container">
+            <h1 class="form-title">ĐĂNG KÍ LỊCH KHÁM</h1>
+            <form action="#">
+               <div class="main-user-info">
+            <!--  <div class="user-input-box">
+                    <p>Bạn đăng kí lịch khám cho:</p>
+                    <label for="parent">
+                        <input type="radio" name="pick" id="parent">Người thân
+                    </label>   
+                    <label for="myself">
+                        <input type="radio" name="pick" id="myself">Bản thân
+                    </label>           
+                </div>
+                -->
+                 <div class="user-input-box">
+                    <label for="fullName">HỌ</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Nhập vào họ">
+                 </div>
+                 <div class="user-input-box">
+                    <label for="username">HỌ TÊN </label>
+                    <input type="text" id="username" name="username" placeholder="Đầy đủ họ tên">
+                 </div>
+                 <div class="user-input-box">
+                    <label for="email">EMAIL</label>
+                    <input type="text" id="email" name="email" placeholder="Nhập vào email của bạn">
+                 </div>
+                 <div class="user-input-box">
+                    <label for="sdt">SỐ ĐIỆN THOẠI</label>
+                    <input type="text" id="sdt" name="sdt" placeholder="Nhập vào số điện thoại">
+                 </div>
+                 <div class="user-input-box">
+                    <label for="day">NGÀY ĐẶT HẸN</label>
+                    <input type="date" name="day" id="day">
+                 </div>
+                 <div class="user-input-box">
+                    <label for="time">THỜI GIAN</label>
+                    <input type="time" name="time" id="time">
+                 </div>
+          
+               </div>
+               <div class="gender-details-box">
+                <span class="gender-title">GIỚI TÍNH</span>
+                <div class="gender-category">
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">NỮ</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">NAM</label>
+                </div>
+                <div class="form-submit-btn">
+                    <input type="submit" value="Đặt lịch hẹn">
+                </div>
+               </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
